@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>𝓑𝓸𝓸𝓴 𝓪 𝓒𝓪𝓴𝓮 | 𝓑𝓪𝓴𝓮𝓻𝔂 𝓓'𝓪𝓶𝓸𝓾𝓻</title>
-  <link rel="stylesheet" href="\css/style.css">
+  <link rel="stylesheet" href="style.css">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
@@ -20,12 +20,12 @@
         <span class="ml-3 text-xl">𝓑𝓪𝓴𝓮𝓻𝔂 𝓓'𝓪𝓶𝓸𝓾𝓻</span>
       </a>
       <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-        <a href="\index.html" class="mr-5 hover:text-gray-900">𝓗𝓸𝓶𝓮</a>
-        <a href="\index.html#gallery" class="mr-5 hover:text-gray-900">𝓖𝓪𝓵𝓵𝓮𝓻𝔂</a>
-        <a href="\index.html#chef" class="mr-5 hover:text-gray-900">𝓞𝓾𝓻 𝓒𝓱𝓮𝓯</a>
-        <a href="\index.html#contact" class="mr-5 hover:text-gray-900">𝓒𝓸𝓷𝓽𝓪𝓬𝓽 𝓤𝓼</a>
+        <a href="index.html" class="mr-5 hover:text-gray-900">𝓗𝓸𝓶𝓮</a>
+        <a href="index.html#gallery" class="mr-5 hover:text-gray-900">𝓖𝓪𝓵𝓵𝓮𝓻𝔂</a>
+        <a href="index.html#chef" class="mr-5 hover:text-gray-900">𝓞𝓾𝓻 𝓒𝓱𝓮𝓯</a>
+        <a href="index.html#contact" class="mr-5 hover:text-gray-900">𝓒𝓸𝓷𝓽𝓪𝓬𝓽 𝓤𝓼</a>
       </nav>
-      <button onclick="window.location.href='\index.html'" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">𝓑𝓪𝓬𝓴
+      <button onclick="window.location.href='index.html'" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">𝓑𝓪𝓬𝓴
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
         </svg>
@@ -54,7 +54,7 @@
               </div>
               <textarea name="Message" class="form-control" id="Message" placeholder="Message"
                 required=""></textarea>
-              <button type="submit" class="btn btn-contact">Send Message</button>
+              <button type="submit" class="btn btn-contact">Order Cake</button>
               <!-- <input type="button" class="btn btn-contact" onclick="sendmail();"  value="Send Message"> -->
 
             </form>
@@ -79,11 +79,11 @@
 			var name = $('#Name').val();
 			var email = $('#Sender').val();
 			var subject = $('#Subject').val();
-            var message = "New order";
+            var message = "Chocolate Cake";
 
 			// var body = $('#body').val();
 
-			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Order: '+message;
 			//console.log(name, phone, email, message);
 
 			Email.send({
